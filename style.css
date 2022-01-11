@@ -1,0 +1,66 @@
+h1 {
+  text-align: center;
+  border-bottom: 3px solid green;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  font-size: 40px;
+}
+#category {
+  margin-top: 0;
+  border-right: 3px solid green;
+  width: 120px;
+}
+h3  {
+  margin-top: 5;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.league {
+  text-align: center;
+  border: 1.5px solid green;
+  border-top: none;
+  border-bottom: 3px solid green;
+  list-style: none;
+  display: inline;
+}
+ul {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px;
+  margin-bottom: 5px;
+  padding: 0px;
+}
+#contents {
+  padding: 5px;
+}
+@media(max-width:500px){
+  #category {
+
+    width: auto;
+    list-style: none;
+    border-right: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 0px;
+      margin-bottom: 0px;
+      padding: 0px;
+      border-bottom: 3px solid green;
+  }
+#category li{
+  text-align: center;
+}
+  #grid {
+    display: block;
+
+  }
+  #grid ul {
+    border-left: 1.5px solid green;
+  }
+}
